@@ -32,6 +32,12 @@ public class ComparaisonImage {
                 int rgbA = img1.getRGB(x,y);
                 int rgbB = img2.getRGB(x,y);
                 int redA = (rgbA >> 16) & 0xff;
+                int greenA = (rgbA >> 8) & 0xff;
+                int blueA = (rgbA) & 0xff;
+                int redB = (rgbB >> 16) & 0xff;
+                int greenB = (rgbB >> 8) & 0xff;
+                int blueB = (rgbB) & 0xff;
+
             }
         }
 
